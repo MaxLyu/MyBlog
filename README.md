@@ -1,2 +1,2 @@
 # MyBlog
-Building a blog with Django.
+Building my blog website with Django.
