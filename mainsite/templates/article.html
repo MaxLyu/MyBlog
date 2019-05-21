@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %} {{article.title}} {% endblock %}
+{% block headmessage %}
+    <h3 class="title">{{article.title}}</h3>
+    <hr>
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <p>
+            {{ article.content | safe }}
+        </p>
+    </div>
+    <div id="post-time">
+        <p>
+            Post @ {{ article.pub_date | date:"Y M d, h:m:s" }} {{ article.author }}
+        </p>
+    </div>
+    <hr>
+    <span><a href="/">Back to HOME</a></span>
+{% endblock %}

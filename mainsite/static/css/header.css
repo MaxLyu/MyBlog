@@ -1,0 +1,11 @@
+.header {
+    height: 150px;
+    margin-bottom: 60px;
+}
+.header h1 {
+    text-align: center;
+    line-height: 150px;
+}
+.header h1 a{
+    text-decoration: none;
+}

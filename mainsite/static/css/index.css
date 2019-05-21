@@ -1,0 +1,19 @@
+.block{
+    padding: 10px 2px;
+}
+#title p{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+#abstract p{
+    color: #8c8c8c;
+    font-size: 18px;
+}
+#post-time{
+    padding: 10px 15px;
+}
+#post-time p{
+    font-size: 13px;
+    float: right;
+    color: #9d9d9d;
+}

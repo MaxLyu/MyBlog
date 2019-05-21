@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %} Welcome to Max' s Blog {% endblock %}
+{% block headmessage %}{% endblock %}
+{% block content %}
+    {% for article in articles %}
+        <div class="panel block">
+            <div id="title">
+                <p style="font-family: 微软雅黑">
+                    <a href="/article/{{article.slug}}" style="text-decoration: none">{{ article.title }}</a>
+                </p>
+            <div>
+            <div class="panel-body" id="abstract">
+                <p>
+                    {{ article.content | truncatechars:100 | safe }}
+                </p>
+            </div>
+            <div id="post-time">
+                <p>
+                    Posted @ {{ article.pub_date | date:"Y M d, h:m:s" }} {{ article.author }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
